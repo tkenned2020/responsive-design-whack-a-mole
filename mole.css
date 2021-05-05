@@ -1,12 +1,22 @@
 /* Write your CSS here. */
+
+/* div {
+    display: inline-block
+} */
 .wgs {
-  height: ;
-  width: ;
+  display: inline-block;
+  height: 482px;
+  width: 640px;
   position: relative;
+  overflow: hidden;
+}
+.wgs__mole-head--hidden {
+  margin-top: 482px;
+  display: inline-block;
 }
 
 .wgs__mole-head {
-  height: ;
+  /* height: ; */
   width: 376px;
   position: absolute;
   left: 109px;
