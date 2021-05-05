@@ -1,18 +1,20 @@
 /* Write your CSS here. */
 .wgs {
-    height: ;
-    width: ;
-    position: ;
+  height: ;
+  width: ;
+  position: relative;
 }
 
 .wgs__mole-head {
-    height: ;
-    width: ;
-    position: ;
+  height: ;
+  width: 376px;
+  position: absolute;
+  left: 109px;
 }
 
 .wgs__dirt-pile {
-    height: ;
-    width: ;
-    position: ;
+  height: 220px;
+  width: 640px;
+  position: absolute;
+  top: 262px;
 }
