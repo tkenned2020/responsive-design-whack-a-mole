@@ -1,8 +1,7 @@
-/* Write your CSS here. */
 
-/* div {
-    display: inline-block
-} */
+body {
+  zoom: 0.75;
+}
 .pf{
    display: grid;
    grid-template-columns: repeat(4, 1fr);
