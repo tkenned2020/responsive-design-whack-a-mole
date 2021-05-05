@@ -1,28 +1,26 @@
-
 body {
   zoom: 0.75;
 }
-.pf{
-   display: grid;
-   grid-template-columns: repeat(4, 1fr);
-   grid-template-rows: 1fr 1fr;
+.pf {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
 }
 
 .wgs {
   display: inline-block;
-  height: 482px;
-  width: 640px;
+  height: 241px;
+  width: 320px;
   position: relative;
   overflow: hidden;
 }
+
 .wgs__mole-head--hidden {
   margin-top: 241px;
-  display: inline-block;
 }
 
 .wgs__mole-head {
-  /* height: ; */
-  width:  188px;
+  width: 188px;
   position: absolute;
   left: 54.5px;
   transition: margin-top 0.25s;

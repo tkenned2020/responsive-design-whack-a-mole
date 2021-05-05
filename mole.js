@@ -1,27 +1,24 @@
-window.addEventListener('DOMContentLoaded', setTimeout(() => {
+function popUpRandomMole() {
+  const moles = document.querySelectorAll(".wgs__mole-head");
+  let randNum = Math.floor(Math.random() * moles.length),
+    molesIdx = moles[randNum];
 
-    function popUpRandomMole() {
-        const moles = document.querySelectorAll('wgs__mole-head');
-        let randNum = Math.random() * 8;
+  molesIdx.classList.remove("wgs__mole-head--hidden");
 
-        for (let i = randNum; i <= moles.length; i++) {
-            let mole = moles[i];
-            return mole
-        }
+  setTimeout(() => {
+    hideMole(molesIdx);
+  }, 1000);
+}
 
-        setTimeout(() => {
-            return hideMole(moles)
-        }, 1000)
+function hideMole(mole) {
+  mole.classList.add("wgs__mole-head--hidden");
+  setTimeout(() => {
+    popUpRandomMole();
+  }, 1000);
+}
 
-    }
-
-    function hideMole(el) {
-        const moleMod = el.forEach(ele => {
-            ele.classList.add('wgs__mole-head--hidden')
-        });
-        setTimeout(() => {
-            return popUpRandomMole(moleMod)
-        }, 1000)
-    }
-}, 0)
-)
+window.addEventListener("DOMContentLoaded", () => {
+  setTimeout(() => {
+    popUpRandomMole();
+  }, 0);
+});
