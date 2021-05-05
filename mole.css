@@ -3,6 +3,12 @@
 /* div {
     display: inline-block
 } */
+.pf{
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: 1fr 1fr;
+}
+
 .wgs {
   display: inline-block;
   height: 482px;
@@ -11,20 +17,21 @@
   overflow: hidden;
 }
 .wgs__mole-head--hidden {
-  margin-top: 482px;
+  margin-top: 241px;
   display: inline-block;
 }
 
 .wgs__mole-head {
   /* height: ; */
-  width: 376px;
+  width:  188px;
   position: absolute;
-  left: 109px;
+  left: 54.5px;
+  transition: margin-top 0.25s;
 }
 
 .wgs__dirt-pile {
-  height: 220px;
-  width: 640px;
+  height: 110px;
+  width: 320px;
   position: absolute;
-  top: 262px;
+  top: 131px;
 }
